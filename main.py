@@ -15,7 +15,8 @@ app = FastAPI()
 # This allows your front-end (running on a different port/domain)
 # to communicate with your backend.
 origins = [
-    os.getenv("UI_BASE_URL") or "http://localhost:3000"
+   "https://image-to-pdf-converter-teal.vercel.app"
+
 ]
 
 app.add_middleware(
